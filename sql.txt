@@ -1,0 +1,50 @@
+CREATE DATABASE practice
+
+CREATE TABLE data (name varchar(50))
+
+drop TABLE data
+
+CREATE TABLE data(id int(10) PRIMARY KEY AUTO_INCREMENT,name varchar(50),email varchar(50),mobile varchar(50))
+
+ALTER TABLE data ADD(new varchar(50))
+
+ALTER TABLE data CHANGE new old varchar(50)
+
+ALTER TABLE data DROP old
+
+INSERT INTO data VALUE(null,'jignesh','jmail','9999999999')
+
+INSERT INTO data VALUE(null,'hardik','hmail','8888888888'),(null,'amrit','amail','7777777777')
+
+INSERT INTO data VALUE(null,'jignesh','jimail','6666666666'),(null,'dip','dmail',null)
+
+DELETE FROM data WHERE id=5
+
+DELETE FROM data
+
+INSERT INTO data VALUE(null,'jignesh','jmail','9999999999'),(null,'hardik','hmail','8888888888'),
+(null,'amrit','amail','7777777777'),(null,'jignesh','jimail','6666666666')
+
+TRUNCATE TABLE data
+
+UPDATE data SET 
+name = "jay",
+email = "jamail",
+mobile='5555555555'
+WHERE id=3
+
+UPDATE data SET
+mobile = 8888888888
+
+UPDATE data SET
+name="joy"
+WHERE id = 4
+
+UPDATE data SET
+email = "jomail",
+mobile = '4444444444'
+WHERE id=4
+
+
+
+
